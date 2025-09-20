@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Detail Skeleton - Adjusted</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Skeleton base styles */
+        .skeleton-column {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: skeleton-column-shimmer 1.5s infinite;
+            border-radius: 4px;
+        }
+
+        /* Skeleton para imagen principal */
+        .skeleton-column-main-img {
+            width: 100%;
+            height: 350px;
+            border-radius: 12px;
+        }
+
+        /* Skeleton para badges */
+        .skeleton-column-badge {
+            height: 28px;
+            width: 120px;
+            border-radius: 20px;
+        }
+
+        .skeleton-column-badge-small {
+            height: 24px;
+            width: 80px;
+            border-radius: 16px;
+        }
+
+        /* Skeleton para botón favorito */
+        .skeleton-column-fav-btn {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        /* Skeleton para título */
+        .skeleton-column-title {
+            height: 32px;
+            width: 60%;
+        }
+
+        /* Skeleton para subtítulo */
+        .skeleton-column-subtitle {
+            height: 20px;
+            width: 40%;
+        }
+
+        /* Skeleton para precio */
+        .skeleton-column-price {
+            height: 28px;
+            width: 180px;
+        }
+
+        /* Skeleton para ubicación */
+        .skeleton-column-location {
+            height: 18px;
+            width: 70%;
+        }
+
+        /* Skeleton para características */
+        .skeleton-column-feature {
+            height: 18px;
+            width: 60px;
+        }
+
+        /* Skeleton para iconos sociales */
+        .skeleton-column-social-icon {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+        }
+
+        /* Skeleton para navegación */
+        .skeleton-column-nav-btn {
+            height: 44px;
+            width: 44px;
+            border-radius: 50%;
+        }
+
+        /* Skeleton para indicadores */
+        .skeleton-column-indicator {
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+        }
+
+        /* Animación shimmer */
+        @keyframes skeleton-column-shimmer {
+            0% {
+                background-position: 200% 0;
+            }
+
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .skeleton-column-main-img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container-fluid py-4">
+
+        <!-- Simulando el contenedor padre col-lg-9 -->
+        <div class="row">
+            <div class="col-lg-9">
+
+                <div class="row g-4">
+                    <!-- Columna de imagen -->
+                    <div class="col-lg-5">
+                        <div class="position-relative">
+                            <!-- Imagen principal skeleton -->
+                            <div class="skeleton-column skeleton-column-main-img position-relative">
+                                <!-- Badges superpuestos -->
+                                <div class="position-absolute top-0 start-0 p-3 d-flex flex-column gap-2">
+                                    <div class="skeleton-column skeleton-column-badge"></div>
+                                    <div class="skeleton-column skeleton-column-badge-small"></div>
+                                </div>
+                                <!-- Botón favorito -->
+                                <div class="position-absolute top-0 end-0 p-3">
+                                    <div class="skeleton-column skeleton-column-fav-btn"></div>
+                                </div>
+                                <!-- Botones de navegación -->
+                                <div class="position-absolute top-50 start-0 translate-middle-y ms-2">
+                                    <div class="skeleton-column skeleton-column-nav-btn"></div>
+                                </div>
+                                <div class="position-absolute top-50 end-0 translate-middle-y me-2">
+                                    <div class="skeleton-column skeleton-column-nav-btn"></div>
+                                </div>
+                                <!-- Indicadores -->
+                                <div class="position-absolute bottom-0 start-50 translate-middle-x mb-3 d-flex gap-2">
+                                    <div class="skeleton-column skeleton-column-indicator"></div>
+                                    <div class="skeleton-column skeleton-column-indicator"></div>
+                                    <div class="skeleton-column skeleton-column-indicator"></div>
+                                    <div class="skeleton-column skeleton-column-indicator"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna de información -->
+                    <div class="col-lg-7">
+                        <div class="ps-lg-4">
+                            <!-- Título y subtítulo -->
+                            <div class="mb-3">
+                                <div class="skeleton-column skeleton-column-title mb-2"></div>
+                                <div class="skeleton-column skeleton-column-subtitle"></div>
+                            </div>
+                            <!-- Precio -->
+                            <div class="mb-3">
+                                <div class="skeleton-column skeleton-column-price"></div>
+                            </div>
+                            <!-- Ubicación -->
+                            <div class="mb-4">
+                                <div class="skeleton-column skeleton-column-location"></div>
+                            </div>
+                            <!-- Características -->
+                            <div class="mb-4">
+                                <div class="d-flex flex-wrap gap-4">
+                                    <div class="skeleton-column skeleton-column-feature"></div>
+                                    <div class="skeleton-column skeleton-column-feature"></div>
+                                    <div class="skeleton-column skeleton-column-feature"></div>
+                                    <div class="skeleton-column skeleton-column-feature"></div>
+                                </div>
+                            </div>
+                            <!-- Iconos sociales -->
+                            <div class="d-flex gap-3">
+                                <div class="skeleton-column skeleton-column-social-icon"></div>
+                                <div class="skeleton-column skeleton-column-social-icon"></div>
+                                <div class="skeleton-column skeleton-column-social-icon"></div>
+                                <div class="skeleton-column skeleton-column-social-icon"></div>
+                                <div class="skeleton-column skeleton-column-social-icon"></div>
+                                <div class="skeleton-column skeleton-column-social-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Simulando sidebar (col-lg-3) para mostrar el contexto -->
+            <div class="col-lg-3">
+                <div class="bg-secondary-subtle p-3 rounded">
+                    <h6 class="text-muted">Sidebar (col-lg-3)</h6>
+                    <p class="small text-muted mb-0">Aquí iría el contenido del sidebar</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
